@@ -3,6 +3,9 @@ import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfTransformer
 
+"""
+Use Beer objects to create word-frequency dataframe with n_samples randomly chosen beers
+"""
 
 def create_data(n_samples=10000):
     rand_ints = np.random.choice(325000, size=n_samples, replace=False)
