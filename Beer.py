@@ -9,6 +9,7 @@ class Beer:
     """
     Beer object contains word-frequency data for the BeerAdvocate reviews of given beer.
     Uses first 25 comments from "top-raters" to get the data.
+    Expandable to get more comments, but requires grabbing a new page for every 25 comments, which can be costly
     """
     def __init__(self, beer_id):
         # self.beer_string = beer_string
