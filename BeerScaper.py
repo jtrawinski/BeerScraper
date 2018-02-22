@@ -8,7 +8,8 @@ Use Beer objects to create word-frequency dataframe with n_samples randomly chos
 """
 
 def create_data(n_samples=10000):
-    rand_ints = np.random.choice(325000, size=n_samples, replace=False)
+    MAX_ID = 325000
+    rand_ints = np.random.choice(MAX_ID, size=n_samples, replace=False)
     # beer id is uniquely determined by second number, so the 5 is arbitrary
     beer_ids = ["/5/" + str(n) + "/" for n in rand_ints]
     data = pd.DataFrame()
